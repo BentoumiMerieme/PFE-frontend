@@ -1,0 +1,107 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0faff;
+}
+
+.container {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  background: #4070f4;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  flex: 1;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.form header {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.signup header {
+  color: #fff;
+}
+
+.login header {
+  color: #333;
+}
+
+.form.active {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form.inactive {
+  opacity: 0.6;
+  transform: scale(0.95);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+  height: 16px;
+  width: 16px;
+}
+
+.checkbox label {
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 45px;
+  background: #4070f4;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.error {
+  color: #ff3333;
+  font-size: 14px;
+  margin-top: -5px;
+}
